@@ -1,3 +1,3 @@
-SELECT *
-FROM information_schema.COLUMNS
+SELECT * 
+FROM information_schema.COLUMNS 
 WHERE TABLE_NAME = 'amzn_reviews';
