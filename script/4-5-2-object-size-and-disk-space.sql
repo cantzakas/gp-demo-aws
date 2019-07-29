@@ -5,7 +5,7 @@ SELECT gp_size_of_table_disk.schemaname,
 	tablesize, 
 	indexsize, 
 	toastsize, 
-	othersize
+	othersize 
 FROM (
 	SELECT sotd.sotdoid as oid, 
 		sotd.sotdschemaname as schemaname, 
@@ -33,7 +33,7 @@ FROM (
 	FROM
 		gp_toolkit.gp_size_of_table_uncompressed as sotu
 	WHERE
-		sotu.sotuschemaname || '.' || sotu.sotutablename = 'demo.amzn_reviews') gp_size_of_table_uncompressed
+		sotu.sotuschemaname || '.' || sotu.sotutablename = 'demo.amzn_reviews') gp_size_of_table_uncompressed 
 WHERE
 	gp_size_of_table_disk.oid = gp_size_of_table_and_indexes_disk.oid
 	AND gp_size_of_table_and_indexes_disk.oid = gp_size_of_table_uncompressed.oid;
