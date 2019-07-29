@@ -7,6 +7,6 @@ FROM (
 		count(*) c, 
 		gp_segment_id 
 	FROM
-		demo.amazn_reviews
+		demo.amzn_reviews
 	GROUP BY 2
 ) AS a;
