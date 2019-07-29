@@ -20,5 +20,5 @@ CREATE TABLE demo.amzn_reviews(
   verified_purchase TEXT, 
   review_headline TEXT, 
   review_body TEXT, 
-  review_date DATE 
+  review_date DATE) 
 DISTRIBUTED BY (review_id);
