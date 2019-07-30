@@ -5,4 +5,4 @@ SELECT
 	partitionlevel, 
 	partitionrank 
 FROM pg_partitions 
-WHERE tablename='amazn_reviews_2';
+WHERE tablename='amzn_reviews_2';
