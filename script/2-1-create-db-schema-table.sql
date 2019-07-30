@@ -4,7 +4,6 @@ CREATE SCHEMA demo;
 
 DROP TABLE IF EXISTS demo.amzn_reviews;
 
-
 CREATE TABLE demo.amzn_reviews(
   marketplace TEXT, 
   customer_id BIGINT, 
