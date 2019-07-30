@@ -7,7 +7,7 @@ SELECT sotd.schemaname || '.' || sotd.tablename as tablename,
 	othersize, 
 	sopaid.partitionschemaname || '.' || sopaid.partitiontablename as partitionname, 
 	sopaid.partitiontablesize, 
-	sopaid.partitionindexsize
+	sopaid.partitionindexsize 
 FROM ( 
 	SELECT sotd.sotdoid as oid, 
 		sotd.sotdschemaname as schemaname, 
