@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS demo.amzn_reviews_2;
+
 CREATE TABLE demo.amzn_reviews_2(
 	marketplace TEXT, 
 	customer_id BIGINT, 
