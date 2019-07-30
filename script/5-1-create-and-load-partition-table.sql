@@ -26,6 +26,6 @@ PARTITION BY RANGE(review_date)
 INSERT INTO demo.amzn_reviews_2 
 SELECT * FROM demo.amzn_reviews;
 
-SELECT COUNT(*) AS row_count, 'demo.amzn_reviews' tablename FROM demo.amzn_reviews
+SELECT COUNT(*) AS row_count, 'demo.amzn_reviews' tablename FROM demo.amzn_reviews 
 UNION ALL 
 SELECT COUNT(*) AS row_count, 'demo.amzn_reviews_2' tablename FROM demo.amzn_reviews_2;
