@@ -1,16 +1,23 @@
 # gp-demo
 
+## [Part 1](GP-demo-1.ipynb)
 1. Setup 
 2. Describe input dataset 
+
+## [Part 2](GP-demo-2.ipynb)
 3. Data Loading 
-   1. Single `INSERT` Operation 
-   2. `COPY` command 
-   3. `GPLOAD` utility 
+   - Single `INSERT` Operation 
+   - `COPY` command 
+   - `GPLOAD` utility 
+
+## [Part 3](GP-demo-3.ipynb)
 4. Basic Table Functions 
-   1. DESCRIBE Table 
-   2. Data Distribution across Segments 
-   3. Table Size and Disk Space Usage 
-   4. Check for Data Skew 
+   - DESCRIBE Table 
+   - Data Distribution across Segments 
+   - Table Size and Disk Space Usage 
+   - Check for Data Skew 
+   
+## [Part 4]
 5. MPP Fundamentals 
 6. Partitioning 
 7. Compression 
