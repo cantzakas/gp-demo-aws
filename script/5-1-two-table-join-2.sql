@@ -1,4 +1,4 @@
-EXPLAIN ANALYZE 
+EXPLAIN 
 SELECT 
 	sales.cdate, 
 	sum(qty) OVER (ORDER BY sales.cdate), 
