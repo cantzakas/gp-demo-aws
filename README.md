@@ -36,4 +36,5 @@
 - Install Pygments Python library, i.e. `pip install Pygments`
 - Install GIthub `git` utility, i.e. `pip install git`
 - Navigate to the root of your Jupyter Notebook, i.e. `/usr/local/share/jupyter/notebook_root/` or similar.
-- Clone the Githun repo to the folder above, i.e. `git clone [https://github.com/cantzakas/gp-demo.git](https://github.com/cantzakas/gp-demo.git)`
+- Clone the Github repo into the folder above, i.e. `git clone https://github.com/cantzakas/gp-demo.git`.
+- Open your Jupyter Notebook and navigate to gp-demo/README.md (i.e. [http://127.0.0.1:9900/tree/gp-demo/README.md](http://127.0.0.1:9900/tree/gp-demo/README.md) or similar)
