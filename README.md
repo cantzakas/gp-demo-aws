@@ -4,9 +4,8 @@
 1. Setup 
 2. Describe input dataset 
 3. Data Loading 
-   - Single `INSERT` Operation 
-   - `COPY` command 
    - `GPLOAD` utility 
+   - Other Data Loading Options
 
 ## [Part 2](GP-demo-2.ipynb)
 4. Basic Table Functions 
