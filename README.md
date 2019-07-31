@@ -32,9 +32,9 @@
 - A working Greenplum Database where Jupyter Notebook can connect to and execute commands
 
 ## Setup
-- Install psql on Jupyter Notebook (i.e. `sudo apt-get install postgresql-client` on Ubuntu 16.04/18.04 or `sudo yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm; sudo yum install postgresql10` on Red Hat Enterprise Linux 7 or later).
-- Install Pygments Python library, i.e. `pip install Pygments`
-- Install GIthub `git` utility, i.e. `pip install git`
-- Navigate to the root of your Jupyter Notebook, i.e. `/usr/local/share/jupyter/notebook_root/` or similar.
-- Clone the Github repo into the folder above, i.e. `git clone https://github.com/cantzakas/gp-demo.git`.
-- Open your Jupyter Notebook and navigate to gp-demo/README.md (i.e. [http://127.0.0.1:9900/tree/gp-demo/README.md](http://127.0.0.1:9900/tree/gp-demo/README.md) or similar)
+- Install **psql** on the VM which hosts your Jupyter Notebook (i.e. `sudo apt-get install postgresql-client` on Ubuntu 16.04/18.04 or `sudo yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm; sudo yum install postgresql10` on Red Hat Enterprise Linux 7 or later).
+- On the same VM, install **Pygments Python library**, i.e. `pip install Pygments` and Github **git** utility, i.e. `pip install git`.
+- Navigate to the root direcotry of your Jupyter Notebook, i.e. `/usr/local/share/jupyter/notebook_root/` or similar, depending on your Jupyter configuration. Clone the Github repo into the folder, i.e. `git clone https://github.com/cantzakas/gp-demo.git`.
+- Open your Jupyter Notebook and navigate to `gp-demo/README.md` file, i.e. on [http://127.0.0.1:9900/tree/gp-demo/README.md](http://127.0.0.1:9900/tree/gp-demo/README.md) or similar, depending on your Jupyter configuration.
+
+
