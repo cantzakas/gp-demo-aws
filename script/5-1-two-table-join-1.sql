@@ -21,7 +21,7 @@ FROM (
 	SELECT *,
 		TRUNC(RANDOM() * 50 + 1)::INT AS qty 
 	FROM 
-		GENERATE_SERIES(1, 1000000)) A;
+		GENERATE_SERIES(1, 1000)) A;
 
 INSERT INTO demo.sales2 
 SELECT * FROM demo.sales;
