@@ -22,3 +22,7 @@ FROM (
 
 INSERT INTO demo.sales2 
 SELECT * FROM demo.sales;
+
+VACUUM ANALYZE demo.sales; 
+
+VACUUM ANALYZE demo.sales2; 
