@@ -12,6 +12,7 @@
    - DESCRIBE Table 
    - Data Distribution across Segments 
    - Table Size and Disk Space Usage 
+
    - Check for Data Skew 
 
 ## [Part 3](GP-demo-3.ipynb)
@@ -35,4 +36,4 @@
 - Install Pygments Python library, i.e. `pip install Pygments`
 - Install GIthub `git` utility, i.e. `pip install git`
 - Navigate to the root of your Jupyter Notebook, i.e. `/usr/local/share/jupyter/notebook_root/` or similar.
-- Clone the Githun repo to the folder above, i.e. git clone
+- Clone the Githun repo to the folder above, i.e. git clone https://github.com/cantzakas/gp-demo.git
