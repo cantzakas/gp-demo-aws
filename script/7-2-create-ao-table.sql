@@ -1,4 +1,4 @@
-CREATE TABLE bar (
+CREATE TABLE foo (
 	a int, 
 	b text) 
 WITH (appendonly=true) 
