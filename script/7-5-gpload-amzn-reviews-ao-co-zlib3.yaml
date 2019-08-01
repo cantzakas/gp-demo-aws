@@ -10,7 +10,7 @@ GPLOAD:
     - MAX_LINE_LENGTH: 1000000 
     - ERROR_LIMIT: 50000 
    OUTPUT: 
-    - TABLE: demo.amzn-reviews-ao-co-zlib3 
+    - TABLE: demo.amzn_reviews_ao_co_zlib3 
     - MODE: insert 
    PRELOAD: 
     - TRUNCATE: true 
