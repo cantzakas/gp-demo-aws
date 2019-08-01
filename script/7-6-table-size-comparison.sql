@@ -1,7 +1,7 @@
 SELECT 
 	tablename, 
 	tablesize, 
-	total_tablesize
+	total_tablesize 
 FROM ( 
 SELECT 
 	'demo.amzn_reviews_heap' AS tablename, 
