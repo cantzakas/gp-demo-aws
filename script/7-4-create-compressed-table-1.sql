@@ -1,1 +1,5 @@
-CREATE TABLE foo (a int, b text) WITH (appendonly=true, compresstype=zlib, compresslevel=5);
+CREATE TABLE foo ( 
+	a int, 
+	b text) 
+WITH (appendonly=true, compresstype=zlib, compresslevel=5) 
+DISTRIBUTED BY (a); 
