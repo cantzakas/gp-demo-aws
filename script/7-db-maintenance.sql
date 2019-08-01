@@ -1,2 +1,2 @@
-DROP IF EXISTS TABLE demo.amzn_reviews; 
-DROP IF EXISTS TABLE demo.amzn_reviews_2; 
+DROP TABLE IF EXISTS demo.amzn_reviews; 
+DROP TABLE IF EXISTS demo.amzn_reviews_2; 
