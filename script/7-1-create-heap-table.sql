@@ -1,1 +1,5 @@
-CREATE TABLE foo (a int, b text) DISTRIBUTED BY (a);
+CREATE TABLE foo ( 
+	a int, 
+	b text) 
+DISTRIBUTED BY (a);
+ 
