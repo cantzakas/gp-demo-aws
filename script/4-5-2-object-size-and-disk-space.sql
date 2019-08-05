@@ -6,7 +6,7 @@ SELECT pg_namespace.nspname AS schema,
 	pg_size_pretty(sotaid.sotaidtablesize::BIGINT) as tabledisksize, 
 	pg_size_pretty(sotaid.sotaididxsize::BIGINT) as indexsize, 
 	pg_size_pretty(sotu.sotusize::BIGINT) as uncompressedsize, 
-	ROUND(100.0 * (1-(sotaid.sotaidtablesize/sotu.sotusize)), 2) AS compressionpercentage 
+	ROUND((100.0 * (1-(sotaid.sotaidtablesize/sotu.sotusize)))::NUMERIC, 2) AS compressionpercentage 
 FROM pg_class 
 	LEFT JOIN pg_stat_user_tables 
 		ON pg_stat_user_tables.relid = pg_class.oid 
