@@ -1,3 +1,5 @@
+if [ -d $HOME/data ]; then rm -rf $HOME/data; fi
+
 mkdir $HOME/data
 cd $HOME/data
 
