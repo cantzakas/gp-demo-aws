@@ -29,8 +29,8 @@ pip install --upgrade --force-reinstall --user pip
 pip install --upgrade --force-reinstall --user boto3
 pip install --upgrade --force-reinstall awscli
 
-echo "*********************************************************************************"
-echo " Get AWS CLI version"
-echo "*********************************************************************************"
+echo "***********************"
+echo "* Get AWS CLI version *"
+echo "***********************"
 aws --version
 
