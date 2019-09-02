@@ -1,4 +1,4 @@
-if [$HOME/.aws]; then rm -Rf $HOME/.aws; fi
+if [ -d $HOME/.aws ]; then rm -rf $HOME/.aws; fi
 
 mkdir $HOME/.aws
 
