@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS demo.calendar; 
+DROP TABLE IF EXISTS demo.calendar CASCADE; 
 CREATE TABLE demo.calendar (cdate DATE)  
 DISTRIBUTED BY (cdate); 
 
