@@ -27,7 +27,7 @@ source $HOME/.bash_profile
 
 pip install --upgrade --force-reinstall --user pip
 pip install --upgrade --force-reinstall --user boto3
-pip install --upgrade --force-reinstall awscli
+pip install --upgrade --force-reinstall --user awscli
 
 echo "***********************"
 echo "* Get AWS CLI version *"
