@@ -23,3 +23,5 @@ FROM demo.calendar C1
 		ON C1.cdate >= C2.cdate 
 		AND C1.from_mtd = C2.from_mtd 
 		AND C1.from_ytd = C2.from_ytd; 
+
+ANALYSE demo.calendar; 
