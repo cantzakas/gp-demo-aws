@@ -7,15 +7,15 @@ SELECT GENERATE_SERIES(0, max(review_date) - min(review_date)) + min(review_date
 FROM ( 
 	SELECT review_date 
 	FROM demo.amzn_reviews 
-	GROUP BY review_date) A;
+	GROUP BY review_date) A; 
 
-ALTER TABLE demo.calendar ADD COLUMN from_mtd date;
-ALTER TABLE demo.calendar ADD COLUMN from_ytd date;
+ALTER TABLE demo.calendar ADD COLUMN from_mtd date; 
+ALTER TABLE demo.calendar ADD COLUMN from_ytd date; 
 
 UPDATE demo.calendar 
-SET from_mtd = (EXTRACT(YEAR FROM cdate) || '-' || EXTRACT(MONTH FROM cdate) || '-1')::date,  
+SET from_mtd = (EXTRACT(YEAR FROM cdate) || '-' || EXTRACT(MONTH FROM cdate) || '-1')::date, 
 	from_ytd = (EXTRACT(YEAR FROM cdate) || '-1-1')::date 
-
+ 
 CREATE VIEW demo.calendar_MTD AS 
 SELECT C1.cdate, C2.cdate AS cdate_mtd 
 FROM demo.calendar C1 
