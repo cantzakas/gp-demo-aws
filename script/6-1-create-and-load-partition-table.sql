@@ -23,9 +23,9 @@ PARTITION BY RANGE(review_date)(
     EVERY ('1 year'::interval) 
 ); 
 
-ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1995-01-01') TO year1998; 
-ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1996-01-01') TO year1998; 
-ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1997-01-01') TO year1998; 
+ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1995-01-01') TO year1995; 
+ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1996-01-01') TO year1996; 
+ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1997-01-01') TO year1997; 
 ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1998-01-01') TO year1998; 
 ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1999-01-01') TO year1999; 
 ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('2000-01-01') TO year2000; 
