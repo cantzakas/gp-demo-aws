@@ -18,11 +18,14 @@ CREATE TABLE demo.amzn_reviews_2(
   review_date DATE) 
 DISTRIBUTED BY (review_id) 
 PARTITION BY RANGE(review_date)( 
-    START ('1998-01-01'::date) 
+    START ('1995-01-01'::date) 
     END ('2015-12-31'::date) INCLUSIVE 
     EVERY ('1 year'::interval) 
 ); 
 
+ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1995-01-01') TO year1998; 
+ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1996-01-01') TO year1998; 
+ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1997-01-01') TO year1998; 
 ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1998-01-01') TO year1998; 
 ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('1999-01-01') TO year1999; 
 ALTER TABLE demo.amzn_reviews_2 RENAME PARTITION FOR ('2000-01-01') TO year2000; 
