@@ -1,6 +1,6 @@
 #!/bin/bash
   
-source ./init_gp_demo_var.sh
+source $HOME/init_gp_demo_var
 
 cd $HOME
 
@@ -13,7 +13,7 @@ then
 
   pip install --upgrade --force-reinstall --user pip
 else
-  exit
+  pip --version
 fi
 
 if [ "$(pip list -o | grep -E '^jupyter\s+.*$' | awk '{print $2}')" != "" ]

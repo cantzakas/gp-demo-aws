@@ -18,7 +18,7 @@ FROM (
 	FROM 
 		gp_toolkit.gp_size_of_table_disk as sotd 
 	WHERE 
-		sotd.sotdschemaname || '.' || sotd.sotdtablename = 'demo.amzn_reviews_2') sotd 
+		sotd.sotdschemaname || '.' || sotd.sotdtablename = 'demo.amzn_reviews_partitioned') sotd 
 	INNER JOIN ( 
 		SELECT sotaid.sotaidoid as oid, 
 			sotaid.sotaidschemaname as schemaname, 
@@ -28,7 +28,7 @@ FROM (
 		FROM 
 			gp_toolkit.gp_size_of_table_and_indexes_disk as sotaid 
 		WHERE 
-			sotaid.sotaidschemaname || '.' || sotaid.sotaidtablename = 'demo.amzn_reviews_2') sotaid 
+			sotaid.sotaidschemaname || '.' || sotaid.sotaidtablename = 'demo.amzn_reviews_partitioned') sotaid 
 	ON sotd.oid = sotaid.oid 
 	INNER JOIN ( 
 		SELECT sotu.sotuoid as oid, 
@@ -38,7 +38,7 @@ FROM (
 		FROM 
 			gp_toolkit.gp_size_of_table_uncompressed as sotu 
 		WHERE 
-			sotu.sotuschemaname || '.' || sotu.sotutablename = 'demo.amzn_reviews_2') sotu 
+			sotu.sotuschemaname || '.' || sotu.sotutablename = 'demo.amzn_reviews_partitioned') sotu 
 	ON sotaid.oid = sotu.oid 
 	RIGHT OUTER JOIN ( 
 		SELECT 
@@ -50,5 +50,5 @@ FROM (
 		FROM 
 			gp_toolkit.gp_size_of_partition_and_indexes_disk 
 		WHERE 
-			sopaidparentschemaname || '.' || sopaidparenttablename = 'demo.amzn_reviews_2') sopaid 
+			sopaidparentschemaname || '.' || sopaidparenttablename = 'demo.amzn_reviews_partitioned') sopaid 
 	ON sopaid.parenttableoid = sotd.oid;

@@ -4,6 +4,6 @@ SELECT
 	count(*) AS segment_count, 
 	SUM(COUNT(*)) OVER (PARTITION BY tableoid::regclass) AS partition_count 
 FROM 
-	demo.amzn_reviews_2 
+	demo.amzn_reviews_partitioned 
 GROUP BY 1, 2 
 ORDER BY 1, 2;
