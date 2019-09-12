@@ -6,7 +6,7 @@ Pivotal Greenplum Database is a massively parallel processing (MPP) database ser
 
 Greenplum Database runs anywhere; the same software is available on leading public cloud marketplaces - [Amazon Web Services (AWS)](https://pivotal.io/partners/aws/pivotal-greenplum), [Microsoft Azure](https://pivotal.io/partners/microsoft/pivotal-greenplum), and [Google Cloud Platform (GCP)](https://pivotal.io/partners/gcp/pivotal-greenplum), on VMware vSphere and OpenStack private clouds, with container orchestration systems like Kubernetes or on-premises, in either custom or dedicated and purposely-build hardware such as [Greenplum Building Blocks](https://pivotal.io/pivotal-greenplum-building-blocks).
 
-This guide is organised in 4 parts, each explaining a different set of Greenplum Database concepts, and all area delivered in the form of a [Jupyter Notebooks](https://jupyter.org):
+This guide is organised in 4 parts, each explaining a different set of Greenplum Database concepts, and all are delivered in the form of a [Jupyter Notebooks](https://jupyter.org):
 
 - [Part 1](AWS-GP-demo-1.ipynb): Data Loading,  and the `GPLoad` utility.
 - [Part 2](AWS-GP-demo-2.ipynb): Basic Table functions, `DESCRIBE TABLE`, Data Distribution, Table Size and Disk Space Usage, and Data Skew.
