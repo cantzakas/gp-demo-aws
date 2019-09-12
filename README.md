@@ -16,7 +16,7 @@ This guide is organised in 4 parts, each explaining a different set of Greenplum
 ### Setup instructions
 - To execute properly, the Jupyter notebooks assume there is an active Greenplum Database Server they can connect to, i.e. Greenplum Database available on Amazon Web Services (AWS). For information on how to create a Greenplum Database server cluster on Amazon Web Services, feel free to check this [YouTube video; Pivotal Greenplum on AWS Marketplace July 2019 Update](https://www.youtube.com/watch?v=P2qVgaGpfFQ).
 - Install a new or connect to an existing Jupyter Server host: 
-  - Create a a new OS parameter, named `AWSGPDBCONN`, and store the Greenplum Database connection information, i.e. 
+  - Create a new OS variable, named `AWSGPDBCONN`, and store the Greenplum Database connection information, i.e. 
     ```
     $ export AWSGPDBCONN="postgresql://<username>:<password>@<server>:<port>/<database_name>"
     ```
