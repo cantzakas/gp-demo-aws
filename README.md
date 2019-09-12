@@ -14,7 +14,7 @@ This guide is organised in 4 parts, each explaining a different set of Greenplum
 
 Each part is delivered in the form of a [Jupyter notebook](https://jupyter.org/). Depending on whether the Greenplum Database  instance requires (or not) an identity file (private key) for public key authentication, you may use one of the two available versions, the one which requires an identity file ([Part 1](AWS-GP-demo-1.ipynb.ipynb), [Part 2](AWS-GP-demo-2.ipynb), [Part 3](AWS-GP-demo-3.ipynb), [Part 4](AWS-GP-demo-4.ipynb)) and the one which doesn't ([Part 1](GP-demo-1.ipynb), [Part 2](GP-demo-2.ipynb), [Part 3](GP-demo-3.ipynb), [Part 4](GP-demo-4.ipynb)).
 
-### Prerequisites & Instructions
+### Setup instructions
 - Create a new or connect to an existing Greenplum Database Server. The connection string should be in the following format
   ```
   postgresql://<username>:<password>@<server>:<port>/<database_name>
