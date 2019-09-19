@@ -3,7 +3,7 @@
 cd $HOME
 
 curl -O https://bootstrap.pypa.io/get-pip.py
-python $HOME/get-pip.py --user
+python $HOME/get-pip.py --force-reinstall --user
 rm $HOME/get-pip.py
 
 mv $HOME/.bash_profile $HOME/.bash_profile.old
