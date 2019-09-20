@@ -3,7 +3,7 @@
 cd $HOME
 
 curl -O https://bootstrap.pypa.io/get-pip.py
-python $HOME/get-pip.py --force-reinstall --user
+python $HOME/get-pip.py --force-reinstall
 rm $HOME/get-pip.py
 
 mv $HOME/.bash_profile $HOME/.bash_profile.old
@@ -25,9 +25,9 @@ EOF
 chmod 644 $HOME/.bash_profile
 source $HOME/.bash_profile
 
-pip install --upgrade --force-reinstall --user pip
-pip install --upgrade --force-reinstall --user boto3
-pip install --upgrade --force-reinstall --user awscli
+pip install --upgrade --force-reinstall pip
+pip install --upgrade --force-reinstall boto3
+pip install --upgrade --force-reinstall awscli
 
 echo "***********************"
 echo "* Get AWS CLI version *"
