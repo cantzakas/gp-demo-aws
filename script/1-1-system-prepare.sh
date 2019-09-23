@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo su -
-
 cd $HOME
 
 curl -O https://bootstrap.pypa.io/get-pip.py
