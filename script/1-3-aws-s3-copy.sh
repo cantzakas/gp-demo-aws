@@ -7,6 +7,8 @@ if [ -d $S3_DATA_DIR ]; then rm -rf $S3_DATA_DIR; fi
 mkdir $S3_DATA_DIR
 cd $S3_DATA_DIR
 
+echo $PATH
+
 aws s3 cp s3://amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_00.tsv.gz amazon_reviews_us_Books_v1_00.tsv.gz
 aws s3 cp s3://amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_01.tsv.gz amazon_reviews_us_Books_v1_01.tsv.gz
 aws s3 cp s3://amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv.gz amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv.gz
