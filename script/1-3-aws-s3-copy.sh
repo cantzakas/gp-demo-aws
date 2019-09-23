@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo su -
-
 export S3_DATA_DIR = /var/tmp_s3_data
 
 if [ -d $S3_DATA_DIR ]; then rm -rf $S3_DATA_DIR; fi
