@@ -1,3 +1,7 @@
+#!/bin/bash
+
+sudo su -
+
 if [ -d $HOME/.aws ]; then rm -rf $HOME/.aws; fi
 
 mkdir $HOME/.aws
