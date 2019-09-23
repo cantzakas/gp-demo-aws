@@ -2,10 +2,12 @@
 
 sudo su -
 
-if [ -d $HOME/data ]; then rm -rf $HOME/data; fi
+export S3_DATA_DIR = /var/tmp_s3_data
 
-mkdir $HOME/data
-cd $HOME/data
+if [ -d $S3_DATA_DIR ]; then rm -rf $S3_DATA_DIR; fi
+
+mkdir $S3_DATA_DIR
+cd $S3_DATA_DIR
 
 aws s3 cp s3://amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_00.tsv.gz amazon_reviews_us_Books_v1_00.tsv.gz
 aws s3 cp s3://amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_01.tsv.gz amazon_reviews_us_Books_v1_01.tsv.gz
