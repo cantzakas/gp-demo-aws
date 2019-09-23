@@ -1,3 +1,7 @@
+#!/bin/bash
+
+sudo su -
+
 if [ -d $HOME/data ]; then rm -rf $HOME/data; fi
 
 mkdir $HOME/data
