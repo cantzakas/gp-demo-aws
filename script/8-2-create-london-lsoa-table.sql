@@ -16,7 +16,7 @@ SELECT
 FROM ( 
     SELECT JSON_ARRAY_ELEMENTS(dat->'features')::json AS dat_features 
     FROM ( 
-        SELECT @::JSON AS dat
+        SELECT '@@@'::JSON AS dat
     ) A 
 ) foo 
 DISTRIBUTED BY (movement_id);
