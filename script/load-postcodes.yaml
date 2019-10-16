@@ -1,0 +1,17 @@
+VERSION: 1.0.0.1
+GPLOAD:
+   INPUT:
+    - SOURCE:
+         FILE:
+           - /var/tmp_s3_data/PCD_OA_LSOA_MSOA_LAD_AUG19_UK_LU.csv
+    - FORMAT: csv
+    - HEADER: true
+    - LOG_ERRORS: true
+    - MAX_LINE_LENGTH: 1000000
+    - ERROR_LIMIT: 50000
+   OUTPUT:
+    - TABLE: demo.postcode_lookup
+    - MODE: insert
+   PRELOAD:
+    - TRUNCATE: true
+    - REUSE_TABLES: true
