@@ -16,8 +16,7 @@ SUBPARTITION BY RANGE (hod)
 		START (0) END (23) EVERY (1), 
 			DEFAULT SUBPARTITION OTHERHOD) 
 (VALUES (201601, 201602, 201603, 201604, 201701, 201702, 201703, 201704, 201801), DEFAULT PARTITION OTHERQOY);
-    
-DROP TABLE IF EXISTS demo.postcode_lookup;
+
 CREATE TABLE demo.postcode_lookup (
 	pcd7 TEXT,
 	pcd8 TEXT, 
@@ -35,7 +34,13 @@ CREATE TABLE demo.postcode_lookup (
 	ladnmw TEXT) 
 DISTRIBUTED RANDOMLY;
 
-DROP TABLE IF EXISTS demo.colour_gradient;
+CREATE TABLE demo.postcodelatlng (
+	id INT, 
+	postcode VARCHAR(8),
+	latitude(18,15),
+	longitude(18,15)
+) DISTRIBUTED BY (id);
+
 CREATE TABLE demo.colour_gradient (
 	id SMALLINT, 
 	min INT, 
