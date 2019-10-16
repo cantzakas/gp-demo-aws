@@ -1,4 +1,4 @@
-CREATE TABLE demo.london_LSOA AS
+CREATE TABLE demo.london_LSOA AS 
 SELECT 
     dat_features->>'type' AS dat_type, 
     ST_GeomFromGeoJSON(dat_features->>'geometry') AS geometry,
@@ -14,9 +14,9 @@ SELECT
     (((dat_features->>'properties')::json)->>'MOVEMENT_ID')::INT AS movement_id, 
     ((dat_features->>'properties')::json)->>'DISPLAY_NAME' AS display_name 
 FROM ( 
-    SELECT JSON_ARRAY_ELEMENTS(dat->'features')::json AS dat_features
+    SELECT JSON_ARRAY_ELEMENTS(dat->'features')::json AS dat_features 
     FROM ( 
         SELECT @::JSON AS dat
     ) A 
-) foo
+) foo 
 DISTRIBUTED BY (movement_id);
