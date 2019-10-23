@@ -37,8 +37,8 @@ DISTRIBUTED RANDOMLY;
 CREATE TABLE demo.postcodelatlng (
 	id INT, 
 	postcode VARCHAR(8),
-	latitude(18,15),
-	longitude(18,15)
+	latitude DECIMAL(18,15),
+	longitude DECIMAL(18,15)
 ) DISTRIBUTED BY (id);
 
 CREATE TABLE demo.colour_gradient (

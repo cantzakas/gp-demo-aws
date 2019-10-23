@@ -1,22 +1,20 @@
-CREATE TABLE demo.london_LSOA AS 
-SELECT 
-    dat_features->>'type' AS dat_type, 
-    ST_GeomFromGeoJSON(dat_features->>'geometry') AS geometry,
-    ((dat_features->>'properties')::json)->>'msoa_code' AS msoa_code, 
-    ((dat_features->>'properties')::json)->>'msoa_name' AS msoa_name, 
-    ((dat_features->>'properties')::json)->>'la_code' AS la_code, 
-    ((dat_features->>'properties')::json)->>'la_name' AS la_name, 
-    (((dat_features->>'properties')::json)->>'geoeast')::INT AS geoeast, 
-    (((dat_features->>'properties')::json)->>'geonorth')::INT AS geonorth, 
-    (((dat_features->>'properties')::json)->>'popeast')::INT AS popeast, 
-    (((dat_features->>'properties')::json)->>'popnorth')::INT AS popnorth, 
-    (((dat_features->>'properties')::json)->>'area_km2')::NUMERIC AS area_km2, 
-    (((dat_features->>'properties')::json)->>'MOVEMENT_ID')::INT AS movement_id, 
-    ((dat_features->>'properties')::json)->>'DISPLAY_NAME' AS display_name 
-FROM ( 
-    SELECT JSON_ARRAY_ELEMENTS(dat->'features')::json AS dat_features 
-    FROM ( 
-        SELECT '@@@'::JSON AS dat
-    ) A 
-) foo 
-DISTRIBUTED BY (movement_id);
+CREATE TABLE demo.london_lsoa ( 
+	dat_type text NULL, 
+	geometry geometry NULL, 
+	msoa_code text NULL, 
+	msoa_name text NULL, 
+	la_code text NULL, 
+	la_name text NULL, 
+	geoeast int4 NULL, 
+	geonorth int4 NULL, 
+	popeast int4 NULL, 
+	popnorth int4 NULL, 
+	area_km2 numeric NULL, 
+	movement_id int4 NULL, 
+	display_name text NULL 
+) 
+DISTRIBUTED BY (movement_id); 
+  
+CREATE TABLE demo.london_lsoa_txt ( 
+	input TEXT) 
+DISTRIBUTED RANDOMLY; 
