@@ -4,14 +4,15 @@ GPLOAD:
    INPUT:
     - SOURCE:
          FILE:
-           - /var/tmp_s3_data/uber-movement-ldn.tar.gz
+           - /var/tmp_s3_data/dft_traffic_counts_raw_counts.tar.gz
     - FORMAT: csv
     - HEADER: true
+    - NULL_AS: 'NULL'
     - LOG_ERRORS: true
     - MAX_LINE_LENGTH: 1000000
     - ERROR_LIMIT: 50000
    OUTPUT:
-    - TABLE: demo.uber_mov_ldn
+    - TABLE: demo.dft_traffic_counts_raw
     - MODE: insert
    PRELOAD:
     - TRUNCATE: true
