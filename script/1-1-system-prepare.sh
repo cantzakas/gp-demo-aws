@@ -28,6 +28,7 @@ source $HOME/.bash_profile
 pip install --upgrade --force-reinstall pip
 pip install --upgrade --force-reinstall boto3
 pip install --upgrade --force-reinstall awscli
+pip install --upgrade --force-reinstall matplotlib
 
 echo "***********************"
 echo "* Get AWS CLI version *"
