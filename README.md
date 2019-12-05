@@ -50,3 +50,5 @@ This guide is organised in 4 main parts each explaining a different set of Green
     ```
     $ chmod 0400 $HOME/.ssh/aws.pem
     ```
+### Notice
+This demo has been tested to work with Greenplum Database, versions 5.x. The same fails for Greenplum Database version 6.x (6.1.0 at the time of this update) due an identified bug in `COPY` (`GPLoad`) utility which prevents data loading in bulk mode.
