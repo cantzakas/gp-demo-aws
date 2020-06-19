@@ -1,8 +1,8 @@
 EXPLAIN ANALYZE 
-SELECT COUNT(*), 
+SELECT product_id, 
 	marketplace, 
 	product_category, 
 	star_rating 
-FROM demo.amzn_reviews_heap 
+FROM demo.amzn_reviews_ro 
 WHERE DATE_PART('year', review_date) BETWEEN 2000 AND 2005 
-GROUP BY 2, 3, 4;
+ORDER BY RANDOM();

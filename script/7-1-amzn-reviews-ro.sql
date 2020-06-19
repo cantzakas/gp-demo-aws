@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS demo.amzn_reviews_heap; 
+DROP TABLE IF EXISTS demo.amzn_reviews_ro; 
 
-CREATE TABLE demo.amzn_reviews_heap( 
+CREATE TABLE demo.amzn_reviews_ro( 
   marketplace TEXT, 
   customer_id BIGINT, 
   review_id TEXT, 

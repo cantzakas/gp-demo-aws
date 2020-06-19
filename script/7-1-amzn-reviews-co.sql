@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS demo.amzn_reviews_ao_co_zlib3; 
+DROP TABLE IF EXISTS demo.amzn_reviews_co; 
 
-CREATE TABLE demo.amzn_reviews_ao_co_zlib3( 
+CREATE TABLE demo.amzn_reviews_co( 
   marketplace TEXT, 
   customer_id BIGINT, 
   review_id TEXT, 
