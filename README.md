@@ -21,9 +21,10 @@ This guide is organised in 4 main parts each explaining a different set of Green
     ```
     $ export AWSGPDBCONN="postgresql://<username>:<password>@<server>:<port>/<database_name>"
     ```
-  - Make sure the `sqlalchemy` and `ipython-sql` Python libraries are installed, i.e. 
+  - Make sure the `sqlalchemy`, `psycopg2-binary` and `ipython-sql` Python libraries are installed, i.e. 
     ```
     $ pip install sqlalchemy # ORM for databases
+    $ pip install psycopg2-binary
     $ pip install ipython-sql # SQL magic function
     ```
   - Install the PostgreSQL Client Utilities.
