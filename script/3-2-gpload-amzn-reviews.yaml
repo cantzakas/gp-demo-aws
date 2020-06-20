@@ -7,7 +7,7 @@ GPLOAD:
     - FORMAT: text
     - HEADER: true
     - LOG_ERRORS: true
-    - MAX_LINE_LENGTH: 2500000
+    - MAX_LINE_LENGTH: 100000
     - ERROR_LIMIT: 50000
    OUTPUT:
     - TABLE: demo.amzn_reviews
