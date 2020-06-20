@@ -3,11 +3,11 @@ GPLOAD:
    INPUT:
     - SOURCE:
          FILE:
-           - /var/tmp_s3_data/amazon_reviews_us*.tsv.gz
+           - /data1/tmp_s3_data/amazon_reviews_us*.tsv.gz
     - FORMAT: text
     - HEADER: true
     - LOG_ERRORS: true
-    - MAX_LINE_LENGTH: 1000000
+    - MAX_LINE_LENGTH: 2500000
     - ERROR_LIMIT: 50000
    OUTPUT:
     - TABLE: demo.amzn_reviews
