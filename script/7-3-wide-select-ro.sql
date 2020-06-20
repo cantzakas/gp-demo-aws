@@ -12,10 +12,5 @@ SELECT marketplace,
 	verified_purchase, 
 	review_headline, 
 	review_body 
-FROM 
-	demo.amzn_reviews_ro 
-WHERE 
-	DATE_PART('year', review_date) BETWEEN 2000 AND 2005 
-ORDER BY 
-	RANDOM() 
-LIMIT 2000;
+FROM demo.amzn_reviews_ro 
+WHERE DATE_PART('year', review_date) BETWEEN 2000 AND 2005;
