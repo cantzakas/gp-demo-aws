@@ -3,7 +3,7 @@ GPLOAD:
    INPUT:
     - SOURCE:
          FILE:
-           - /data1/tmp_s3_data/amazon_reviews_us*.tsv.gz
+           - /data1/tmp_s3_data/amazon_reviews_us_*.tsv.gz
     - FORMAT: text
     - HEADER: true
     - LOG_ERRORS: true
